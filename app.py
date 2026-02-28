@@ -77,6 +77,6 @@ async def predict_route(request:Request,file:UploadFile=File(...)):
   except Exception as e:
     raise NetworkSecurityException(e,sys) from e
 if __name__=="__main__":
-  app_run(app,host="",port=8000) 
+  app_run(app,host="localhost",port=8000) 
   
    
